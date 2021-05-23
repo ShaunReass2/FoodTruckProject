@@ -25,8 +25,8 @@ public class FoodTruck {
 	
 	@Override
 	public String toString() {
-		return "FoodTruck [numericID=" + numericID + ", truckName=" + truckName + ", foodType=" + foodType
-				+ ", numericRating=" + numericRating + "]";
+		return "FoodTruck ID Number: " + numericID + "\n" + "Truck Name: " + truckName + "\n" + "Food Type: " + foodType
+				+ "\n" + "Rating: " + numericRating + "\n";
 	
 //		return "FoodTruck ID = " + numericID + "/n Truck name =" + truckName; 
 	}

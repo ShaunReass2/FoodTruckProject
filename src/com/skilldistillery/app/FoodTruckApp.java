@@ -137,6 +137,7 @@ public class FoodTruckApp {
 				}
 			}
 		}
+		System.out.println("The highested rated is: ");
 		System.out.println(foodTruckArray[index].toString());
 	}
 
