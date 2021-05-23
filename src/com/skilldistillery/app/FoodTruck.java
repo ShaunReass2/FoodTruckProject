@@ -9,8 +9,7 @@ public class FoodTruck {
 	private String foodType;
 	private double numericRating;
 	
-	public FoodTruck() {
-		
+	public FoodTruck() {		
 	}
 	
 	public FoodTruck(String truckName, String foodType, double numericRating) {
@@ -20,8 +19,7 @@ public class FoodTruck {
 		this.truckName = truckName;
 		this.foodType = foodType;
 		this.numericRating = numericRating; 
-}
-	
+	}
 	
 	@Override
 	public String toString() {
@@ -62,8 +60,5 @@ public class FoodTruck {
 	public void setNumericRating(double numericRating) {
 		this.numericRating = numericRating;
 	}
-	
-	
-	
-	
+		
 }

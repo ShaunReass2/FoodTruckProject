@@ -14,7 +14,7 @@ public class FoodTruckApp {
 //		app.run(); 
 		app.userInput();
 		app.menuOptions();
-
+		System.out.println("");
 	}
 //
 //	public void run() {
@@ -34,21 +34,23 @@ public class FoodTruckApp {
 			System.out.println("Please enter the name of the food truck you wish to rate, or enter 'quit' to exit: ");
 			String truckName = scanner.nextLine();
 			if (truckName.equals("quit")) {
+				System.out.println("");
 				menuOptions();
 			}
+			
 			// foodTruckArray [i].setTruckName(truckName);
 
 			System.out.println("Please enter the type of food the truck served: ");
 			String foodType = scanner.nextLine();
 			// foodTruckArray [i].setFoodType(foodType);
 
-			System.out.println(
-					"Please provide a number to rate your experience, with 1 being catastrophic and 5 being heavenly: ");
+			System.out.println("Please provide a number to rate your experience, with 1 being catastrophic and 5 being heavenly: ");
 			double numericRating = scanner.nextDouble();
 			scanner.nextLine();
 			// foodTruckArray [i].setNumericRating(numericRating);
 
 			foodTruckArray[i] = new FoodTruck(truckName, foodType, numericRating);
+		
 		}
 	}
 
@@ -70,7 +72,7 @@ public class FoodTruckApp {
 			System.out.println("*                                      *             *");
 			System.out.println("*                                      *               *");
 			System.out.println("*     1. List existing food trucks     *                 *");
-			System.out.println("*     2. List average ratings          *                   ******");
+			System.out.println("*     2. List average rating           *                   ******");
 			System.out.println("*     3. Display highest rated         *                         *");
 			System.out.println("*     4. Quit                          *            ********     *");
 			System.out.println("*                                      *          *         *    *");
@@ -144,6 +146,7 @@ public class FoodTruckApp {
 	public void menuQuit() {
 
 		System.out.println("Thank you for your rating! We look forward to seeing you again!");
-
+		System.exit(0);
 	}
 }
+
